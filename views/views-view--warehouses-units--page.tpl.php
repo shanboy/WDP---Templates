@@ -36,7 +36,7 @@ foreach ($view->result as $result) {
             $name = $elems['field_contacts_first_name'][0]['#markup'] . $elems['field_contacts_name'][0]['#markup'];
             $email = $elems['field_contacts_email'][0]['#markup'];
             $phone = $elems['field_contacts_telephone'][0]['#title'];
-            print '<tr>
+            print '<tr class="total">
                 <td class="unit">Total</td>
                 <td> ca.' . $global_warehouse . 'm²</td>
                 <td> ca.' . $global_mez . 'm²</td>
@@ -44,7 +44,7 @@ foreach ($view->result as $result) {
             </tr></tbody></table>
         <div class="contact">
 
-            <h4>Contact</h4>                      <p><br>
+            <h4>Contact</h4>                      <p>
               <span>' . $name . '</span>
                 <span>E</span> ' . $email . '<br>
                 <span>T</span> ' . $phone . '<br>
@@ -147,7 +147,7 @@ foreach ($result->field_field_warehouse_units_id[0]['rendered']['node'][$result-
         $elems = $elem;
     }
 
-    
+
 }
 $name = $elems['field_contacts_first_name'][0]['#markup'] . $elems['field_contacts_name'][0]['#markup'];
 $email = $elems['field_contacts_email'][0]['#markup'];
@@ -171,11 +171,10 @@ print '<tr class="total">
     </div>
 </div>';
 $counter = 1;
+print $footer;
 print '</div></div>';
 ?>
 
 
-<?php if ($footer): ?>
-    <?php print $footer; ?>
-<?php endif; ?>
+
 
