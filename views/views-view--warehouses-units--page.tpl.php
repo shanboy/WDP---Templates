@@ -74,6 +74,11 @@ foreach ($view->result as $result) {
         </div>
 
         <img src="/img/locator/breeam_cert.png" class="lblBreeam"/>
+        <div class="list_es">
+                            <div class="bg"></div>
+                            <span><strong>save<br>3,94</strong><br>€/m²/y</span>
+                            <span><strong>save<br>13,54</strong><br>kg CO₂/m²/y</span>
+                        </div>
         <div class="button">
             <a href=node/' . $result->field_field_warehouse_units_id[0]['raw']['target_id'] . ' class="btnReadmore follow">Read more </a>
         </div>
