@@ -37,12 +37,11 @@
 
 <?php
 print '<select name="'.$selectName.'" placeholder="All Countries" id="ddlCustom" class="cd-select">';
-print '<option value="All" selected>All Countries</option>';
                 foreach ($optionsArr as $key => $value) {
 
                   if($value=="- Any -"){
                     $value = "All Countries";
-                    print '<option value="'.$key.'">'.$value.'</option>';
+                    print '<option selected value="'.$key.'">'.$value.'</option>';
                   }else{
                     print '<option value="'.$key.'">'.$value.'</option>';
                   }
